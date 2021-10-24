@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width",initial-scale=1>
+  <title>ポートフォリオ</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/favicon.ico">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>ポートフォリオ</h1>
+      <img src="img/header.png">
+      <nav>
+        <ul>
+          <li>
+            <span class="material-icons">menu_book</span><a href="#qualifications">資格</a>
+          </li>
+          <li>
+            <span class="material-icons">school</span><a href="#skills">スキル</a>
+          </li>
+          <li>
+            <span class="material-icons">work</span><a href="#works">作品</a></li>
+          <li>
+            <span class="material-icons">lightbulb</span><a href="#plans">予定</a>
+          </li>
+          <li>
+            <span class="material-icons">contact_mail</span><a href="#contact">連絡</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section  id="qualifications">
+    <h2>資格</h2>
+    <ul>
+      <li>言語：TOEIC　765点</li>
+      <li>計算：日商簿記　2級</li>
+      <li>IT：ITパスポート</li>
+    </ul>
+  </section>
+  <section id="skills" class="animate">
+    <h2>スキル</h2>
+    <div class="webSkill">
+      <h3>Progateで習得</h3>
+      <span class="sub">ホバーして拡大</span>
+      <img src="img/webRuby.png" height="200" width="350">
+      <img src="img/webNode.png" height="200" width="350">
+      <p>フロントエンド：html,css,Sass,javaScript,jQuery</p>
+      <p>バックエンド：ruby,node.js,python,PHP</p>
+      <p>フレームワーク：Ruby on Rails</p>
+      <h3>dotinstallで勉強中</h3>
+      <span class="sub">ホバーして拡大</span>
+      <img src="img/dotin.png" height="200" width="350">
+      <p>言語：html&css,javaScript,ruby...</p>
+    </div>
+  </section>
+  <section  id="works" class="animate">
+    <h2>作品</h2>
+    <h3>グッズシェアアプリ</h3>
+    <div class="works-container">
+      <div class="picture">
+        <a href="https://goodsshare.herokuapp.com/" target="_blank">
+          <span class="sub">クリックしてサイトに飛ぶ</span>
+          <img src="img/goodsshare.png" height="250" width="350">
+        </a>
+      </div>
+      <div class="text">
+        <p>目的：ファンの間で会場の近くでグッズを交換するため</p>
+        <p>使用言語：html&css,javaScript,ruby</p>
+        <p>フレームワーク：ruby on rails</p>
+        <p>デプロイ：github,AWS</p>
+        <p>機能：登録、ログイン機能、投稿機能、チャット機能</p>
+        <p>追加したい機能：メールアドレス認証機能、位置共有機能</p>
+      </div>
+    </div>
+    <h3>ポートフォリオ</h3>
+    <div class="works-container">
+      <div class="picture">
+        <a href="#" target="_blank">
+          <span class="sub">このサイトです</span>
+          <img src="img/portfolio.png" height="250" width="350">
+        </a>
+      </div>
+      <div class="text">
+        <p>使用言語：html&css,javaScript</p>
+        <p>ナビゲーションにアイコンを使用、クリックで該当箇所に飛ぶ、<br>
+          しかもアイコンが肉球に変化</p>
+        <p>ある程度スクロールしたら、ナビゲーションが一番上の位置に表示される、<br>
+          内容がどんどん表示される</p>
+      </div>
+    </div>
+  </section>
+  <section id="plans" class="animate">
+    <h2>予定</h2>
+    <ul>
+      <li>dotinstallでの継続的な勉強</li>
+      <li>雑誌「日経ソフトウェア」を使って、プログラミングを練習する</li>
+      <li>Adobe illustratorを習得</li>
+    </ul>
+  </section>
+  <section id="contact" class="animate">
+    <h2>連絡</h2>
+    <p>メール：kodonawarutsu@gmail.com</p>
+  </section>
+  <footer><small>(c)dlr-portfolio</small></footer>
+  <script src="main.js"></script>
+</body>
+</html>

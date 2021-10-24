@@ -1,0 +1,153 @@
+/* common */
+
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+
+/* header */
+
+.header-container{
+  width:90%;
+  height:300px;
+  margin:16px auto;
+  position:relative;
+  margin-bottom: 80px;
+}
+.header-container img{
+  width:100%;
+  height:90%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.header-container h1{
+  position: absolute;
+  top:130px;
+  left:30%;
+  color:grey;
+  font-size: 40px;
+}
+.header-container nav{
+  transition: all 0.3s;
+  background: white;
+  width:90%;
+  height:80px;
+  z-index:3;
+}
+.header-container nav.move{
+  position:fixed;
+  top:0;
+  text-align: center;
+}
+.header-container ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.header-container span{
+  vertical-align:sub;
+}
+.header-container a{
+  padding:16px 30px 16px 8px;
+  cursor: pointer;
+  display: inline-block;
+}
+.header-container a:hover{
+  opacity:0.5;
+}
+
+/* main */
+.sub{
+  display: block;
+  color:grey;
+  border:1px solid grey;
+  width:200px;
+  font-size:14px;
+}
+section{
+  width:90%;
+  margin:16px auto;
+  border:1px solid grey;
+}
+section h2{
+  padding:0 12px;
+}
+section img{
+  margin-right:16px;
+  border:1px solid black;
+}
+.webSkill img:hover{
+  transform: scale(2) translateX(40px);
+}
+.webSkill{
+  margin:0 16px;
+}
+.picture{
+  margin:0 32px 0 16px;
+}
+#works h3{
+  padding: 0 12px;
+}
+.works-container{
+  display:flex;
+}
+.works-container .text{
+  line-height:30px;
+}
+.works-container p{
+  color:black;
+}
+#plans ul li,#qualifications ul li{
+  padding:6px;
+}
+#contact p{
+  margin:8px 16px;
+}
+
+/* footer */
+footer{
+  text-align: center;
+  margin:16px;
+}
+
+/* animate */
+.animate{
+  opacity:0;
+  transform: translateY(40px);
+  transition: transform 0.3s,opacity 0.3s;
+}
+.animate.appear{
+  opacity:1;
+  transform: translateY(0);
+}
+
+/* media */
+@media(max-width:965px){
+  .works-container{
+    display:block;
+  }
+  .text{
+    margin-left:16px;
+  }
+}
+@media(max-width:640px){
+  .header-container ul{
+    justify-content:space-between;
+  }
+  .header-container li{
+    font-size: 80%;
+  }
+  .header-container a{
+    padding:8px;
+    text-decoration: underline chocolate 2px;
+  }
+}
