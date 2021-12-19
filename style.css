@@ -86,7 +86,7 @@ section img{
   border:1px solid black;
 }
 .webSkill img:hover{
-  transform: scale(2) translateX(40px);
+  transform: scale(1.5) translateX(40px);
 }
 .webSkill{
   margin:0 16px;
